@@ -14,10 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
     <script src="app/js/app.js"></script>
 </head>
-<body ng-controller="njwtCtrl">
+<body>
     <header ng-include="'views/headers.html'"></header>
-    <signup ng-include="'views/signup.html'"></signup>
+    <div class="container">
+        <div ui-view></div>
+    </div>
 </body>
 </html>
